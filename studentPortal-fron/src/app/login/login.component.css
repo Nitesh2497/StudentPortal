@@ -1,0 +1,25 @@
+.login_form{
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 95%);
+}
+
+.body{
+
+  background-image: url("student-management-11.png");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-color: darkslategray;
+  height: -webkit-fill-available;
+}
+
+.body_div{
+  background-color: #b71540;
+}
+
+.right{
+  margin-left: 10px;
+}

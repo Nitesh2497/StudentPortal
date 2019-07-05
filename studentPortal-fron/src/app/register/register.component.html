@@ -1,0 +1,49 @@
+<div id="parent" class="card row justify-content-md-center" style="width:fit-content;">
+  <article id="child" class="card-body">
+    <h4 class="card-title">Register</h4>
+    <form name="form" (ngSubmit)="register()">
+      <div class="form-group">
+        <label>Name: </label>
+        <br>
+        <input type="text" [(ngModel)]="registerUser.name" class="form-control" name="name">
+        <a *ngIf="!validName" style="color:red;font-size:13px">Please enter valid Name</a>
+      </div>
+      <div class="form-group">
+        <label>Username: </label>
+        <br>
+        <input type="text" [(ngModel)]="registerUser.username" class="form-control" name="username">
+        <a *ngIf="!validUserName" style="color:red;font-size:13px">Please enter valid Name</a>
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <br>
+        <input type="email" [(ngModel)]="registerUser.email" class="form-control" name="email">
+        <a *ngIf="!validEmail" style="color:red;font-size:13px">Invalid Email</a>
+        <!--<a *ngIf="emailError" style="color:red;font-size:13px">Email invalid</a>-->
+      </div>
+
+      <div class="form-group">
+        <label>Password: </label>
+        <!--<a *ngIf="!validPassword" class="float-right alert-danger">Invalid Password</a>-->
+        <br>
+        <input type="password"  minlength="8" [(ngModel)]="registerUser.password" class="form-control" name="password">
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password: </label>
+        <br>
+        <input type="password" minlength="8" [(ngModel)]="confirmPassword"  class="form-control" name="password">
+        <a *ngIf="!validConfirmPass" style="color:red;font-size:13px">Password not matched</a>
+      </div>
+
+      <div class="form-group">
+        <label>Phone No: </label>
+        <br>
+        <input  [(ngModel)]="registerUser.phone" class="form-control" maxlength="10" minlength="10"
+                name="password" type="text">1
+        <a *ngIf="!validContact" style="color:red;font-size:13px">Invalid Phone Number</a>
+      </div>
+      <button type="submit" id="submit" class="btn btn-success">Submit</button>
+    </form>
+  </article>
+</div>

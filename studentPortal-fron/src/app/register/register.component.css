@@ -1,0 +1,33 @@
+#parent{
+  margin: 0 auto;
+  margin-top: 100px;
+}
+#child{
+  width: 350px;
+}
+
+button {
+  background-color: darkslategray; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid darkslategray;
+}
+
+.button1:hover {
+  background-color: darkslategray;
+  color: white;
+}

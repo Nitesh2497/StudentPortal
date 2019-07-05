@@ -1,0 +1,163 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<!------ Include the above in your HEAD tag ---------->
+<app-navbar></app-navbar>
+<form class="form-horizontal" (ngSubmit)="updateStudent(student)">
+  <fieldset>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="id">Student Id</label>
+      <div class="col-md-4">
+        <input id="id" name="id" type="text"  placeholder="Student Id" class="form-control input-md"  [(ngModel)]="student.id" required="required">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="ln">name</label>
+      <div class="col-md-4">
+        <input id="ln" name="ln" type="text" placeholder="Name" class="form-control input-md" [(ngModel)]="student.name" required="required">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="branch">Branch</label>
+      <div class="col-md-4">
+        <input id="branch" name="branch" type="text" placeholder="Branch" class="form-control input-md" [(ngModel)]="student.branch" required="required">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="email">Email</label>
+      <div class="col-md-4">
+        <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" [(ngModel)]="student.email" required="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="add1">Address</label>
+      <div class="col-md-4">
+        <input id="add1" name="add1" type="text" placeholder="" class="form-control input-md" [(ngModel)]="student.address" required="required">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="cgpa">CGPA</label>
+      <div class="col-md-4">
+        <input id="cgpa" name="cgpa" type="text" placeholder="CGPA" class="form-control input-md" [(ngModel)]="student.cgpa" required="required">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <!--<div class="form-group">-->
+      <!--<label class="col-md-4 control-label" for="zip">Zip Code</label>-->
+      <!--<div class="col-md-4">-->
+        <!--<input id="zip" name="zip" type="text" placeholder="Zip Code" class="form-control input-md" required="">-->
+
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Text input&ndash;&gt;-->
+    <!--<div class="form-group">-->
+    <!--<label class="col-md-4 control-label" for="ctry">Country</label>-->
+    <!--<div class="col-md-4">-->
+    <!--<input id="ctry" name="ctry" type="text" placeholder="Country" class="form-control input-md" required="">-->
+
+    <!--</div>-->
+    <!--</div>-->
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="phone">Phone</label>
+      <div class="col-md-4">
+        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" [(ngModel)]="student.phone" required="required">
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="land">Landline</label>
+      <div class="col-md-4">
+        <input id="land" name="land" type="text" placeholder="Phone" class="form-control input-md" [(ngModel)]="student.landline" required="required">
+
+      </div>
+    </div>
+
+    <!--&lt;!&ndash; Multiple Radios (inline) &ndash;&gt;-->
+    <!--<div class="form-group">-->
+    <!--<label class="col-md-4 control-label" for="Training">Would you like to attend our Networking Reception on September 3, 2015?</label>-->
+    <!--<div class="col-md-4">-->
+    <!--<label class="radio-inline" for="Training-0">-->
+    <!--<input type="radio" name="Training" id="Training-0" value="yes" checked="checked">-->
+    <!--Yes-->
+    <!--</label>-->
+    <!--<label class="radio-inline" for="Training-1">-->
+    <!--<input type="radio" name="Training" id="Training-1" value="no">-->
+    <!--No-->
+    <!--</label>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; Multiple Radios (inline) &ndash;&gt;-->
+    <!--<div class="form-group">-->
+    <!--<label class="col-md-4 control-label" for="Networking_Reception">Would you like to attend our Technical Product Update Session on September 4, 2015?</label>-->
+    <!--<div class="col-md-4">-->
+    <!--<label class="radio-inline" for="Networking_Reception-0">-->
+    <!--<input type="radio" name="Networking_Reception" id="Networking_Reception-0" value="meet_yes" checked="checked">-->
+    <!--Yes-->
+    <!--</label>-->
+    <!--<label class="radio-inline" for="Networking_Reception-1">-->
+    <!--<input type="radio" name="Networking_Reception" id="Networking_Reception-1" value="meet_no">-->
+    <!--No-->
+    <!--</label>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!-- Select Basic -->
+    <!--<div class="form-group">-->
+      <!--<label class="col-md-4 control-label" for="selectbasic">Select Basic</label>-->
+      <!--<div class="col-md-4">-->
+        <!--<select id="selectbasic" name="selectbasic" class="form-control input-md">-->
+          <!--<option>Option one</option>-->
+          <!--<option>Option two</option>-->
+        <!--</select>-->
+      <!--</div>-->
+    <!--</div>-->
+
+
+    <!--&lt;!&ndash; Multiple Radios (inline) &ndash;&gt;-->
+    <!--<div class="form-group">-->
+    <!--<label class="col-md-4 control-label" for="Dinner">Would you like to attend our Networking Dinner on September 4, 2015?</label>-->
+    <!--<div class="col-md-4">-->
+    <!--<label class="radio-inline" for="Dinner-0">-->
+    <!--<input type="radio" name="Dinner" id="Dinner-0" value="dinner_yes" checked="checked">-->
+    <!--Yes-->
+    <!--</label>-->
+    <!--<label class="radio-inline" for="Dinner-1">-->
+    <!--<input type="radio" name="Dinner" id="Dinner-1" value="dinner_no">-->
+    <!--No-->
+    <!--</label>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary">Update Details</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

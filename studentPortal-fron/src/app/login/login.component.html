@@ -1,0 +1,15 @@
+<div class="body">
+  <!--<br><br><br><br><br><br><br><br><br>-->
+<form class="form-inline login_form" (ngSubmit)="sendFeedback()">
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" name ="username" [(ngModel)]="login.username" required="required" placeholder="Username">
+    <!--<div class="input-group mb-2 mr-sm-2">-->
+    <input class="input-group mb-2 mr-sm-2 form-control" type="password" id="inlineFormInputGroupUsername2" placeholder="Password" name="password" [(ngModel)]="login.password" required="required">
+    <!--</div>-->
+    <button type="submit" class="btn btn-primary mb-2">Login</button>
+  <div class="right"><button type="submit" class="btn btn-primary mb-2" routerLink="register">Register</button>
+  </div>
+</form>
+  <div *ngIf="!loggedIn" minlength="15"  class="alert alert-danger" style="">Invalid Username or Password</div>
+</div>
+
+

@@ -1,0 +1,46 @@
+<!--<button class="button1" (click)="showDetails()">Click To View Student Details</button>-->
+<!--<br><br>-->
+<!--<app-list-students *ngIf="state === 'true'"></app-list-students>-->
+<!--<app-navbar></app-navbar>-->
+<!--<div>-->
+  <!--<table>-->
+    <!--<th>StudentId</th>-->
+    <!--<th>Name</th>-->
+    <!--<th>Branch</th>-->
+    <!--<th>CGPA</th>-->
+    <!--<th>Address</th>-->
+    <!--<th>Phone</th>-->
+    <!--<th>City</th>-->
+    <!--<tr>-->
+      <!--<td>{{ students.id }}</td>-->
+      <!--<td>{{ students.name }}</td>-->
+      <!--<td>{{ students.branch }}</td>-->
+      <!--<td>{{ students.cgpa }}</td>-->
+      <!--<td>{{ students.address }}</td>-->
+      <!--<td>{{ students.phone }}</td>-->
+      <!--<td>{{ students.city }}</td>-->
+    <!--</tr>-->
+  <!--</table>-->
+<!--</div>-->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<h2>Student Details</h2>
+
+<div class="card">
+  <img src="assets/image/img_avatar.png" alt="Avatar" style="width:35%">
+  <div class="container">
+    <h4><b>Name: {{ students.name }}</b></h4>
+    <p>StudentId: {{students.id}}</p>
+    <p>Branch: {{students.branch}}</p>
+    <p>Address: {{students.address}}</p>
+    <p>CGPA: {{students.cgpa}}</p>
+    <p>Email: {{students.email}}</p>
+    <p>Phone: {{students.phone}}</p>
+    <p>Landline: {{students.landline}}</p>
+
+  </div>
+</div>
+
