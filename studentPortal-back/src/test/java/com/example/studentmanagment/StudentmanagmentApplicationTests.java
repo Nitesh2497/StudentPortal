@@ -29,17 +29,17 @@ public class StudentmanagmentApplicationTests {
 
         Assert.assertTrue(loginService.findUser(login));
     }
-
-    @Test
-    public void validateStudentDetailsById() {
-//        Studentdetails studentdetails = new Studentdetails();
-        Assert.assertNotNull(studentService.getStudentDetail("1"));
-    }
-
-    @Test
-    public void validateDeleteStudent(){
-        Assert.assertTrue(studentService.deleteStudent("1"));
-    }
+//
+//    @Test
+//    public void validateStudentDetailsById() {
+////        Studentdetails studentdetails = new Studentdetails();
+//        Assert.assertNotNull(studentService.getStudentDetail("1"));
+//    }
+//
+//    @Test
+//    public void validateDeleteStudent(){
+//        Assert.assertTrue(studentService.deleteStudent("1"));
+//    }
 
     @Test
     public void validateAddStudent(){
