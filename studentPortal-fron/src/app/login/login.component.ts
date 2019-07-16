@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   sendFeedback(): void {
-  const url = 'http://192.168.33.10:8080/login';
+  const url = 'http://localhost:8080/login';
   this.http.post<boolean>(url, this.login).subscribe(res => {
     if (res === true) {
     console.log('Logged In');

@@ -19,7 +19,7 @@ export class AddStudentComponent implements OnInit {
 
   addStudent(student: Studentdetails): void {
    // this.studentService.addStudent(student).subscribe(res => {
-    const url = 'http://192.168.33.10:8080/listStudents/addStudent';
+    const url = 'http://localhost:8080/listStudents/addStudent';
     this.http.post(url, student).subscribe(res => {
       if (res === true) {
         console.log('Student Details Added');
