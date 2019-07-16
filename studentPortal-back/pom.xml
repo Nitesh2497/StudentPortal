@@ -65,7 +65,7 @@
                             <outputDirectory>${project.build.directory}/classes/static/</outputDirectory >
                             <resources>
                                 <resource>
-                                    <directory>../StudentRecords/dist/StudentRecords</directory>
+                                    <directory>../studentPortal-fron/dist/StudentRecords</directory>
                                 </resource>
                             </resources>
                         </configuration>
