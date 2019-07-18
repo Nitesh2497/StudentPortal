@@ -21,14 +21,14 @@ public class StudentmanagmentApplicationTests {
     @Autowired
     StudentService studentService;
 
-    @Test
-    public void contextLoads() {
-        Login login = new Login();
-        login.setUsername("admin");
-        login.setPassword("root");
+//     @Test
+//     public void contextLoads() {
+//         Login login = new Login();
+//         login.setUsername("admin");
+//         login.setPassword("root");
 
-        Assert.assertTrue(loginService.findUser(login));
-    }
+//         Assert.assertTrue(loginService.findUser(login));
+//     }
 //
 //    @Test
 //    public void validateStudentDetailsById() {
@@ -41,14 +41,14 @@ public class StudentmanagmentApplicationTests {
 //        Assert.assertTrue(studentService.deleteStudent("1"));
 //    }
 
-    @Test
-    public void validateAddStudent(){
-        Studentdetails studentdetails = new Studentdetails();
-        studentdetails.setId("3");
-        studentdetails.setName("Ankit");
-        studentdetails.setAddress("Delhi");
-        studentdetails.setBranch("CS");
-        studentdetails.setCgpa("8");
-        Assert.assertTrue(studentService.addStudent(studentdetails));
-    }
+//     @Test
+//     public void validateAddStudent(){
+//         Studentdetails studentdetails = new Studentdetails();
+//         studentdetails.setId("3");
+//         studentdetails.setName("Ankit");
+//         studentdetails.setAddress("Delhi");
+//         studentdetails.setBranch("CS");
+//         studentdetails.setCgpa("8");
+//         Assert.assertTrue(studentService.addStudent(studentdetails));
+//     }
 }
